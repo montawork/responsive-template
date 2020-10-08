@@ -18,6 +18,7 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -40,6 +41,33 @@
         <a href="#" class="btn">Contact Us Now</a>
       </div>
     </section>
+
+    <!-- Start popup contact container -->
+    <div class="popup-overlay">
+      <div class="popup-container">
+        <h3 class="contact-title">Contact-Us</h3>
+        <div class="form-container">
+          <div class="name">
+            <input type="text" required />
+            <label>Name</label>
+          </div>
+          <div class="email">
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="message">
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <div class="send-btn">
+            <button>Send <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <button class="close-btn">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <!-- End popup contact container -->
 
     <section class="destinations">
       <h3 class="title">Some of our destinations</h3>
@@ -159,5 +187,6 @@
         <li><i class="fa fa-instagram fa-2x"></i></li>
       </ul>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
